@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>材料科学与工程学院通知公告</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/notice.css">
+	<script type="text/javascript" src="__PUBLIC__/index/js/js.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/index/css/style.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/this.css">
+	<script src="__PUBLIC__/index/js/jquery.js"></script>
+<script src="__PUBLIC__/index/js/lanren.js"></script>
+	<style type="text/css">
+	.notice>ul>li>a{
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+	}
+	#foot{
+	width: 1606px;
+	height: 150px;
+	padding-top: 15px;
+	float: left;
+	position: absolute;
+	background-color: #defdf8;
+	}
+	#all{
+		background-image: url();
+	}
+	 ul.pagination li{
+        float: left;
+        list-style: none;
+        margin-left: 2px;
+        padding: 5px;
+        color: black;
+		border: 1px solid #ccc;
+		background: #A8E4E4;
+    }
+      div.pagelist{
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+	</style>
+</head>
+
+<body>
+	<div id="all">
+					{include file="public/top"}
+
+		<div id="center-all">
+		<div class="center">
+			<div class="notice">
+				<div class="TZGG"><span class="tzgg">{$artla.catename}</span></div>
+
+				<ul>
+					{volist name="artll" id="article"}
+					<li><a  href="{:url('/artlist',array('cateid'=>$article['id']))}" class="jingsai"><center>{$article.catename}</center></a>
+					{/volist}
+				</ul>
+				{include file="public/left"}
+ 			</div>
+ 			<div class="center-top">
+ 				<span>当前位置：
+					{volist name="artlaio" id="artlaio"}
+ 					<a style="text-decoration: none;" href="{:url('/artlist',array('cateid'=>$artlaio['id']))}">{$artlaio.catename} </a> <span style="font-size: 15px"> >></span>
+					{/volist}
+ 					 <span style="font-size: 15px"></span></span>
+					
+ 			</div>
+ 			<div class="center-wenzi">
+ 				<h2 ><center>{$artla.catename}</center></h2>
+ 				{volist name="artRes" id="articles"}
+	 			<li><a style="text-decoration: none;color:#0A1FED" href="{:url('/article',array('cateid'=>$articles['cateid'],'artid'=>$articles['id']))}">{$articles.title}</a>
+					{if($artla['type']!=1)}
+	 				<span class="data">{$articles.time|date="Y年m月d日",###}</span>
+					{/if}
+	 			</li>
+	 				{/volist}
+	 				<div class="pagelist" style="color:#0A1FED" >{$artRes->render()}</div>
+	 			</div>
+		</div>
+		 {include file="public/footer"}
+	</div>	
+	</div>
+</body>
+</html>

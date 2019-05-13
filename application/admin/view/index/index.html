@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>北华大学材料科学与工程学院</title>
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__PUBLIC__/admin/style/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/style/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__PUBLIC__/admin/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/admin/style/demo.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/style/typicons.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/style/animate.css" rel="stylesheet">
+</head>
+<style type="text/css">
+    td{
+        float: left;
+        margin-left:20px;
+    }
+</style>
+<body>
+	    {include file="public/top"}
+	<div class="main-container container-fluid">
+		<div class="page-container">
+        {include file="public/left"}
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li class="active">控制面板</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body" style="padding: 18px 40px 24px;" >
+                      <div class="x-body layui-anim layui-anim-up">
+       <h4> 欢迎管理员：
+            <span class="x-red">{$data.name}</span>！当前时间:{$data.date}</h3>
+
+            <legend>系统通知</legend>
+            <div class="layui-field-box">
+                <table class="layui-table" lay-skin="line">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <a class="x-a" href="/" target="_blank">材料科学与工程学院2.0上线了</a>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <legend>系统信息</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <tbody>
+                        <tr>
+                            <th>制作版本</th>
+                            <td>1.0.180420</td></tr>
+                        <tr>
+                            <th>服务器地址</th>
+                            <td>x.xuebingsi.com</td></tr>
+                        <tr>
+                            <th>操作系统</th>
+                            <td>WINNT</td></tr>
+                        <tr>
+                            <th>运行环境</th>
+                            <td>Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9</td></tr>
+                        <tr>
+                            <th>PHP版本</th>
+                            <td>7.0.10</td></tr>
+                        <tr>
+                            <th>PHP运行方式</th>
+                            <td>cgi-fcgi</td></tr>
+                        <tr>
+                            <th>MYSQL版本</th>
+                            <td>5.7.14</td></tr>
+                        <tr>
+                            <th>ThinkPHP</th>
+                            <td>5.0.18</td></tr>
+                        <tr>
+                            <th>上传附件限制</th>
+                            <td>2M</td></tr>
+                        <tr>
+                            <th>执行时间限制</th>
+                            <td>30s</td></tr>
+                        <tr>
+                            <th>剩余空间</th>
+                            <td>86015.2M</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                     <legend>开发团队</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <tbody>
+                        <tr>
+                            <th>版权所有</th>
+                            <td>北华大学创新基地经纬工作室
+                                <a href="http://www.xxx.com/" class='x-a' target="_blank">访问官网</a></td>
+                        </tr>
+                        <tr>
+                            <th>前端页面开发者</th>
+                            <td>王晓红</td></tr>
+                            <th>后端开发者</th>
+                            <td>杨赫</td></tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+    
+                </div>
+                
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__PUBLIC__/admin/style/jquery_002.js"></script>
+    <script src="__PUBLIC__/admin/style/bootstrap.js"></script>
+    <script src="__PUBLIC__/admin/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__PUBLIC__/admin/style/beyond.js"></script>
+    
+
+
+</body></html>

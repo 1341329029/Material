@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>材料科学与工程学院通知公告</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/notice.css">
+	<script type="text/javascript" src="__PUBLIC__/index/js/js.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/index/css/style.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/this.css">
+	<script src="__PUBLIC__/index/js/jquery.js"></script>
+<script src="__PUBLIC__/index/js/lanren.js"></script>
+	<style type="text/css">
+	.notice>ul>li>a{
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+	}
+	.single_info{
+		float:right;
+	}
+	.div-content{
+		margin-top:50px;
+	}
+	.img{
+		margin-top: 100px;
+	}
+	#foot{
+	width: 1606px;
+	height: 150px;
+	padding-top: 15px;
+	float: left;
+	background-color: rgba(147,247,231,0.3);
+	border-top: 3px solid white;
+	}
+	.center {
+    width: 1600px;
+    height: auto;
+	}
+	table{
+  border: 1px solid black;
+  border-collapse:collapse;
+  border-spacing:0;
+  margin:0;
+ }
+  td{
+  	border: 1px solid black;
+  }
+	.center-wenzi{
+		height: auto;
+	}
+	.ll{
+		color:#841a8b;
+	}
+	.post-nav >a{
+		text-decoration: none;
+	}
+	.post-nav >a:hover{
+		color:red;
+		text-decoration: underline;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="all">
+					{include file="public/top"}
+		<div id="center-all">
+		<div class="center">
+			<div class="notice">
+				<div class="TZGG"><span class="tzgg">{$artla.catename}</span></div>
+
+				<ul>
+					{volist name="artll" id="article"}
+					<li><a href="http://127.0.0.1/material/public/index.php/index//artlist/cateid/{$article.id}" class="jingsai"><center>{$article.catename}</center></a>
+					{/volist}
+				</ul>
+				{include file="public/left"}
+ 			</div>
+ 			<div class="center-top">
+ 				<span>当前位置：<a style="text-decoration: none;" href="{:url('/artlist',array('cateid'=>$artla['id']))}">{$artla.catename}</a>  <span style="font-size: 15px"> >></span></span>
+ 			</div>
+ 			<div class="center-wenzi">
+ 			<div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000;
+                    margin-top: 10px;">
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+
+
+                                <h1 class="title single_title">
+                                    <center><span>{$articles.title}</span><span class="title_date"></span></center></h1>
+                              
+                               
+                                <p class="single_info" style="font-weight:100;float:right;">
+								{if($artla['type']!=1)}
+                                时间：{$articles.time|date="Y-m-d",###}&nbsp;&nbsp;&nbsp;
+								{/if}
+                            	编辑：{$articles.author}</p><br>
+                                {if($articles.keywords)}
+                                <p style="font-weight:100;width: 476px;float: left;">关键词：{$articles.keywords}</p>
+                                {/if}
+                                 <p><h5 style="font-weight:100;float:right;">访问次数:{$articles.click}次</h5></p><br><br>
+                                 {if($articles.desc)}
+                                  <p style="font-weight:100;">描述：{$articles.desc}</p>
+                                   {/if}
+
+
+                            </div>
+                            {if($articles.thumb)}
+                            <div class="img">
+                            	<center>
+                            		
+                            		<img style="width:763px;height: 500px; " src="{$articles.thumb}">
+                            	</center>
+                            </div>
+                            {/if}
+                            <div class="div-content">
+                               
+                               <center>{$articles.content}</center>
+                                
+                                <center id="pagenav" style="padding-top: 35px;">
+								    <div class="post-nav">
+										{if condition="$prev eq ''"}
+										<a class="l   ll " href="#" style="padding-left: 35px;
+										float:left;">上一篇没有了</a>
+										{else/}
+										<a class="l" href="{:url('/article',array('cateid'=>$articles['cateid'],'artid'=>$prev))}" style="float:left;padding-left: 25px;"> »上一篇</a>
+										{/if}
+										{if condition="$next eq ''"}
+										<a class="r" href="#" style="float:right;padding-right:35px;">下一篇没有了</a>
+										{else/}
+										<a class="r" href="{:url('/article',array('cateid'=>$articles['cateid'],'artid'=>$next))}" style="float:right;padding-right:25px;">下一篇 »</a>
+										{/if}
+									</div>
+                                    </center>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+	 			</div>
+	 			
+		</div>
+	</div>
+		{include file="public/footer"}
+			  	
+	</div>
+
+</body>
+</html>

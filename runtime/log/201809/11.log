@@ -1,0 +1,201 @@
+---------------------------------------------------------------
+[ 2018-09-11T20:11:26+08:00 ] 0.0.0.0 GET /
+[ info ] localhost/ [运行时间：0.754987s][吞吐率：1.32req/s] [内存消耗：2,392.99kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\WWW\material\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/index\view\index\index.html [ array (
+  0 => 'cateres',
+  1 => 'getlink',
+  2 => 'getyu',
+  3 => 'getleft',
+  4 => 'getfouth',
+  5 => 'getaonly',
+  6 => 'gethot',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119395s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.108598s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 0  AND `type` = 1 [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 10 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 18 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 25 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 33 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 37 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 41 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 44 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 49 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 53 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.045494s ]
+[ sql ] [ SQL ] SELECT * FROM `link` [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `rec_index` = 1 ORDER BY sort desc LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.047370s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 LIMIT 8 [ RunTime:0.025661s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 3 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 63 ORDER BY time desc LIMIT 14 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 2 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 ORDER BY time desc LIMIT 5 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 59 ORDER BY time desc LIMIT 5 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 60 ORDER BY time desc LIMIT 5 [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 61 ORDER BY time desc LIMIT 5 [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 62 ORDER BY time desc LIMIT 5 [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `rec` = 1 ORDER BY click desc LIMIT 6 [ RunTime:0.002009s ]
+---------------------------------------------------------------
+[ 2018-09-11T20:12:48+08:00 ] 0.0.0.0 GET /article/cateid/61/artid/47.html
+[ info ] localhost/article/cateid/61/artid/47.html [运行时间：0.344732s][吞吐率：2.90req/s] [内存消耗：2,337.13kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '61',
+  'artid' => '47',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\phpstudy\WWW\material\application\index\controller\Article.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/index\view\article\lst.html [ array (
+  0 => 'cateres',
+  1 => 'getlink',
+  2 => 'getyu',
+  3 => 'getleft',
+  4 => 'artlaio',
+  5 => 'articles',
+  6 => 'artla',
+  7 => 'artll',
+  8 => 'prev',
+  9 => 'next',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003659s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.016090s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 0  AND `type` = 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 10 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 18 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 25 [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 33 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 37 [ RunTime:0.002342s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 41 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 44 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 49 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 53 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.015354s ]
+[ sql ] [ SQL ] SELECT * FROM `link` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `rec_index` = 1 ORDER BY sort desc LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.015016s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 LIMIT 8 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cate` WHERE  `pid` = 61 LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 61 ORDER BY `sort`  desc LIMIT 0,10 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] UPDATE `article`  SET `click`=`click`+1  WHERE  `id` = 47 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cate` WHERE  (  id IN(61,0) ) LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  (  id IN(61,0) ) LIMIT 0,10 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `id` FROM `article` WHERE  `id` < 47  AND `cateid` = 61 ORDER BY id desc LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `id` FROM `article` WHERE  `id` > 47  AND `cateid` = 61 ORDER BY id desc LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-09-11T20:13:29+08:00 ] 0.0.0.0 GET /
+[ info ] localhost/ [运行时间：0.141654s][吞吐率：7.06req/s] [内存消耗：2,393.25kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\WWW\material\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/index\view\index\index.html [ array (
+  0 => 'cateres',
+  1 => 'getlink',
+  2 => 'getyu',
+  3 => 'getleft',
+  4 => 'getfouth',
+  5 => 'getaonly',
+  6 => 'gethot',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014748s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.010932s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 0  AND `type` = 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 10 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 18 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 25 [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 33 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 37 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 41 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 44 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 49 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 53 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.010646s ]
+[ sql ] [ SQL ] SELECT * FROM `link` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `rec_index` = 1 ORDER BY sort desc LIMIT 1 [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.010851s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 LIMIT 8 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 3 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 63 ORDER BY time desc LIMIT 14 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 2 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 ORDER BY time desc LIMIT 5 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 59 ORDER BY time desc LIMIT 5 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 60 ORDER BY time desc LIMIT 5 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 61 ORDER BY time desc LIMIT 5 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 62 ORDER BY time desc LIMIT 5 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `rec` = 1 ORDER BY click desc LIMIT 6 [ RunTime:0.000691s ]

@@ -1,0 +1,1459 @@
+---------------------------------------------------------------
+[ 2018-08-17T08:30:54+08:00 ] 0.0.0.0 GET /bhuadmin/login.php
+[ info ] localhost/bhuadmin/login.php [运行时间：0.082759s][吞吐率：12.08req/s] [内存消耗：1,081.47kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bhuadmin',
+    1 => 'login.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'counter=10; _ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:30:59+08:00 ] 0.0.0.0 GET /
+[ info ] localhost/ [运行时间：0.417830s][吞吐率：2.39req/s] [内存消耗：2,393.02kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\WWW\material\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/index\view\index\index.html [ array (
+  0 => 'cateres',
+  1 => 'getlink',
+  2 => 'getyu',
+  3 => 'getleft',
+  4 => 'getfouth',
+  5 => 'getaonly',
+  6 => 'gethot',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109303s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.040925s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 0  AND `type` = 1 [ RunTime:0.001844s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 10 [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 18 [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 25 [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 33 [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 37 [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 41 [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 44 [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 49 [ RunTime:0.001343s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `pid` = 53 [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.073503s ]
+[ sql ] [ SQL ] SELECT * FROM `link` [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `rec_index` = 1 ORDER BY sort desc LIMIT 1 [ RunTime:0.001578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.043412s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 LIMIT 8 [ RunTime:0.001826s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 3 [ RunTime:0.001662s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 63 ORDER BY time desc LIMIT 14 [ RunTime:0.001961s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` WHERE  `type` = 2 [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 57 ORDER BY time desc LIMIT 5 [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 59 ORDER BY time desc LIMIT 5 [ RunTime:0.001567s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 60 ORDER BY time desc LIMIT 5 [ RunTime:0.001568s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 61 ORDER BY time desc LIMIT 5 [ RunTime:0.001700s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `cateid` = 62 ORDER BY time desc LIMIT 5 [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `rec` = 1 ORDER BY click desc LIMIT 6 [ RunTime:0.001773s ]
+---------------------------------------------------------------
+[ 2018-08-17T08:31:04+08:00 ] 0.0.0.0 GET /admin
+[ info ] localhost/admin [运行时间：0.117032s][吞吐率：8.54req/s] [内存消耗：1,305.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:07+08:00 ] 0.0.0.0 GET /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.141805s][吞吐率：7.05req/s] [内存消耗：1,307.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:08+08:00 ] 0.0.0.0 GET /captcha.html
+[ info ] localhost/captcha.html [运行时间：0.076613s][吞吐率：13.05req/s] [内存消耗：1,101.47kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:09+08:00 ] 0.0.0.0 GET /captcha.html?0.9141836576310859
+[ info ] localhost/captcha.html?0.9141836576310859 [运行时间：0.042637s][吞吐率：23.45req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_9141836576310859' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:17+08:00 ] 0.0.0.0 POST /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.064541s][吞吐率：15.49req/s] [内存消耗：1,306.78kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123456',
+  'code' => 'lmck',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:20+08:00 ] 0.0.0.0 GET /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.127182s][吞吐率：7.86req/s] [内存消耗：1,307.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:21+08:00 ] 0.0.0.0 GET /captcha.html
+[ info ] localhost/captcha.html [运行时间：0.053393s][吞吐率：18.73req/s] [内存消耗：1,101.63kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:29+08:00 ] 0.0.0.0 POST /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.071193s][吞吐率：14.05req/s] [内存消耗：1,306.78kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'content-length' => '37',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123456',
+  'code' => 'hvbcx',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:32+08:00 ] 0.0.0.0 GET /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.132875s][吞吐率：7.53req/s] [内存消耗：1,307.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:32+08:00 ] 0.0.0.0 GET /captcha.html
+[ info ] localhost/captcha.html [运行时间：0.037860s][吞吐率：26.41req/s] [内存消耗：1,101.63kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:34+08:00 ] 0.0.0.0 GET /captcha.html?0.014589336958280241
+[ info ] localhost/captcha.html?0.014589336958280241 [运行时间：0.037558s][吞吐率：26.63req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_014589336958280241' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:35+08:00 ] 0.0.0.0 GET /captcha.html?0.5114995598702186
+[ info ] localhost/captcha.html?0.5114995598702186 [运行时间：0.040685s][吞吐率：24.58req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_5114995598702186' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:36+08:00 ] 0.0.0.0 GET /captcha.html?0.23064854203939578
+[ info ] localhost/captcha.html?0.23064854203939578 [运行时间：0.057140s][吞吐率：17.50req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_23064854203939578' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:37+08:00 ] 0.0.0.0 GET /captcha.html?0.914333760150192
+[ info ] localhost/captcha.html?0.914333760150192 [运行时间：0.062646s][吞吐率：15.96req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_914333760150192' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:45+08:00 ] 0.0.0.0 POST /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.075503s][吞吐率：13.24req/s] [内存消耗：1,306.78kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'content-length' => '37',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123456',
+  'code' => 'dm4yb',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:48+08:00 ] 0.0.0.0 GET /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.123113s][吞吐率：8.12req/s] [内存消耗：1,307.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:49+08:00 ] 0.0.0.0 GET /captcha.html
+[ info ] localhost/captcha.html [运行时间：0.036445s][吞吐率：27.44req/s] [内存消耗：1,101.63kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:50+08:00 ] 0.0.0.0 GET /captcha.html?0.09486619301968302
+[ info ] localhost/captcha.html?0.09486619301968302 [运行时间：0.039007s][吞吐率：25.64req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_09486619301968302' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:31:52+08:00 ] 0.0.0.0 GET /captcha.html?0.6752052106880334
+[ info ] localhost/captcha.html?0.6752052106880334 [运行时间：0.097681s][吞吐率：10.24req/s] [内存消耗：1,101.91kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; _gat=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '0_6752052106880334' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\WWW\material\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:32:02+08:00 ] 0.0.0.0 POST /admin/login/index.html
+[ info ] localhost/admin/login/index.html [运行时间：0.194256s][吞吐率：5.15req/s] [内存消耗：2,216.73kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'content-length' => '37',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123456',
+  'code' => 'sk83k',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpstudy\WWW\material\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015895s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.055763s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.001596s ]
+---------------------------------------------------------------
+[ 2018-08-17T08:32:06+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.114484s][吞吐率：8.73req/s] [内存消耗：1,340.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:32:06+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.044394s][吞吐率：22.53req/s] [内存消耗：1,082.70kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:33:13+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.122294s][吞吐率：8.18req/s] [内存消耗：1,509.58kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[D:\phpstudy\WWW\material\runtime\temp\bb90357b4b0ef0398cfbaa87a8891fb6.php:221]
+---------------------------------------------------------------
+[ 2018-08-17T08:34:29+08:00 ] 127.0.0.1 GET /wpad.dat
+[ info ] wpad.www.tendawifi.com/wpad.dat [运行时间：0.101181s][吞吐率：9.88req/s] [内存消耗：1,079.05kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wpad.dat',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'wpad.www.tendawifi.com',
+  'user-agent' => 'WinHttp-Autoproxy-Service/5.1',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:34:47+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.055787s][吞吐率：17.93req/s] [内存消耗：1,312.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant session - assumed 'session'[D:\phpstudy\WWW\material\application\admin\controller\Index.php:8]
+---------------------------------------------------------------
+[ 2018-08-17T08:35:27+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.063244s][吞吐率：15.81req/s] [内存消耗：1,084.44kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpstudy\WWW\material\application\admin\controller\Index.php:9]
+---------------------------------------------------------------
+[ 2018-08-17T08:35:37+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.065148s][吞吐率：15.35req/s] [内存消耗：1,473.98kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:35:37+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.036182s][吞吐率：27.64req/s] [内存消耗：1,082.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:35:47+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.054634s][吞吐率：18.30req/s] [内存消耗：1,340.48kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:35:47+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.043314s][吞吐率：23.09req/s] [内存消耗：1,082.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:36:41+08:00 ] 0.0.0.0 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.057413s][吞吐率：17.42req/s] [内存消耗：1,340.48kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\WWW\material\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:36:41+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.035606s][吞吐率：28.09req/s] [内存消耗：1,082.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:37:20+08:00 ] 0.0.0.0 GET /admin/auth_rule/lst.html
+[ info ] localhost/admin/auth_rule/lst.html [运行时间：0.265880s][吞吐率：3.76req/s] [内存消耗：2,310.31kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_rule',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AuthRule->lst[ D:\phpstudy\WWW\material\application\admin\controller\AuthRule.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\auth_rule\lst.html [ array (
+  0 => 'authRuleRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081324s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.051581s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` ORDER BY sort desc [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-08-17T08:37:20+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.043011s][吞吐率：23.25req/s] [内存消耗：1,082.70kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:37:28+08:00 ] 0.0.0.0 GET /admin/article/lst.html
+[ info ] localhost/admin/article/lst.html [运行时间：0.137171s][吞吐率：7.29req/s] [内存消耗：2,191.36kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/admin/auth_rule/lst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->lst[ D:\phpstudy\WWW\material\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\material\public/../application/admin\view\article\lst.html [ array (
+  0 => 'artres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012986s ] mysql:host=127.0.0.1;dbname=material;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.034686s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `article` `a` INNER JOIN `cate` `b` ON `a`.`cateid`=`b`.`id` LIMIT 1 [ RunTime:0.001675s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`catename` FROM `article` `a` INNER JOIN `cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 0,13 [ RunTime:0.002360s ]
+---------------------------------------------------------------
+[ 2018-08-17T08:37:29+08:00 ] 0.0.0.0 GET /static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/static//admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.072865s][吞吐率：13.72req/s] [内存消耗：1,082.70kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => '_ga=GA1.1.1762478325.1526559270; pgv_pvi=7032378368; UM_distinctid=163c3b11c839-04a6cc975c582f-4c312a7a-144000-163c3b11c84396; CNZZDATA681872=cnzz_eid%3D1944491258-1527996551-%26ntime%3D1528440604; hibext_instdsigdipv2=1; counter=76; _gid=GA1.1.1861376530.1534401484; trdipcktrffcext=1; PHPSESSID=posp8tupdai7ca23raf2hn60f3',
+  'referer' => 'http://localhost/static//admin/style/font-awesome.css',
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:44:29+08:00 ] 127.0.0.1 GET /wpad.dat
+[ info ] wpad.www.tendawifi.com/wpad.dat [运行时间：0.074493s][吞吐率：13.42req/s] [内存消耗：1,079.05kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wpad.dat',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'wpad.www.tendawifi.com',
+  'user-agent' => 'WinHttp-Autoproxy-Service/5.1',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-17T08:54:29+08:00 ] 127.0.0.1 GET /wpad.dat
+[ info ] wpad.www.tendawifi.com/wpad.dat [运行时间：0.097303s][吞吐率：10.28req/s] [内存消耗：1,079.05kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpstudy\WWW\material\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wpad.dat',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'wpad.www.tendawifi.com',
+  'user-agent' => 'WinHttp-Autoproxy-Service/5.1',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,13 @@
+
+<div class="TZGG"><span class="tzgg">{$getyu['0']['catename']}</span></div>
+				<ul>
+					{volist name="getleft" id="left"}
+					<li><a href="#"><a href="{:url('/article',array('cateid'=>$left['cateid'],'artid'=>$left['id']))}">
+					<?php
+						echo mb_substr($left['title'],0,10,"utf-8");
+
+					?>
+					</a></a><center<span class="data">{$left.time|date="m-d",###}</span></li>
+					
+					{/volist}
+				</ul>

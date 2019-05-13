@@ -1,0 +1,373 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#all{
+	margin: auto;
+	height:auto;
+	width: 1600px;
+	background: linear-gradient(#63e39e,#63e39e,#8de6b8, #a8e4e4 , #a8e4e4 ,#69e3a4);
+}
+#head{
+	width: 100%;
+	height: 171px;
+	background-color: #c3d5df;
+	background-image: url(..//images/BG-head.jpg);
+	background-repeat: no-repeat;
+	background-size: 130% 120%;
+	background-position: -10px -20px;
+}
+.logo-png{
+	width: 202px;
+
+float: right;
+}
+.head-class{
+	/*border:1px solid black;*/
+	width: 40%;
+	margin-top: 30px;
+	float:left;
+}
+.head-1{
+ 	margin-left:50px;
+ 	/*background-image: url(images/logo.png);*/
+	background-repeat: no-repeat;
+	background-position: 149px center;
+	background-size: 180px 130px;
+	width: 20%;
+	height: 125px;
+	margin-top:10px;
+}
+.head-2{
+    width: 20%;
+	/*background-image: url(images/bhdx.png);*/
+	background-repeat: no-repeat;
+	background-size: 104%;
+}
+.head-3{
+	position: absolute;
+	margin-left: 843px;
+	width: 617px;
+}
+.English{
+	display: block;
+	margin-left: 28px;
+	font-size: 19px;
+	margin-top: -16px;
+	font-weight: bold;
+	font-family: "Segoe Print";
+}
+.head-3-wenzi{
+	font-size: 50px;
+	font-family: 楷体;
+}
+.head-3-wz{
+   padding-top: 15px;
+   width: 500px;
+}
+#menu{
+	height: 40px;
+	/*background:#8bc9d4;*/
+	background-image: url(..//images/menu.png);
+}
+.nav{
+	text-align:center;
+	width:90%;
+	margin:0 auto;
+	height:40px;
+	opacity: 1;
+	/*background:#8bc9d4;*/
+}
+.nav ul{
+	margin:0;
+	padding:0;
+}
+.nav> ul > li{
+	line-height:40px;
+	float:left;
+	width:136px;
+	height:40px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.nav a{
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	font-weight: bold;
+}
+.nav li:hover {
+	background-color:rgba(158, 243, 228, 0.8);
+}
+.nav_down{
+	position:relative;
+}
+.nav_down li{
+	text-align:center;
+	width:136px;
+	height:40px;
+	list-style:none;
+	background-color:rgba(77, 176, 158, 0.8);
+}
+.nav_down_list{
+	position:absolute;
+	display:none;
+	padding:0;
+}
+.nav .nav_down:hover .nav_down_list{
+	display:block;
+	z-index: 999;
+	margin-top: -2px;
+}
+
+#lb{
+	width: 100%;
+	height: 392px;
+	/*background: wheat;*/
+	padding-top: 20px;
+}
+#container{
+	width: 500px;
+	height: 375px;
+	border: 3px solid #333;
+	overflow: hidden;
+	position: relative;
+	float:left;
+	box-shadow: 2px -9px 28px 8px #fff;
+	margin-left: 150px;
+}
+#list{
+	width: 4000px;
+	height: 375px;
+	position:absolute;
+	z-index: 1;
+}
+#list img{
+	float: left;
+	}
+#buttons{
+	position: absolute;
+	height: 10px;
+	width: 132px;
+	z-index: 2;
+	bottom: 20px;
+	left: 196px;
+}
+#buttons span{
+	cursor: pointer;
+	float: left;
+	border: 1px solid #fff;
+	width:10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-left: 5px;
+	}
+#buttons .on{
+	background: orangered;
+	}
+.arrow{cursor: pointer;
+	display: none;
+	line-height: 39px;
+	text-align: center;
+	font-size: 36px;
+	font-weight:bold;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 1;
+	top: 180px;
+	background-color: rgba(0,0,0,.3);
+	color:#fff;
+	text-decoration: none;
+}
+.arrow:hover{
+	background-color: rgba(0,0,0,.7);
+	}
+#container:hover .arrow{
+	display: block;
+}
+#prev{
+	left:20px;
+}
+#next{
+	right: 20px;
+}
+/*轮播图部分*/
+.daohang{
+	width: 22%;
+	height: 300px;
+	float: left;
+	margin-left: 69px;
+	margin-top: 51px;
+	background-image: url(..//images/蓝色矩形1.png);
+	background-repeat: no-repeat;
+	background-size: 96% 31%;
+	background-position-y: -36px;
+	background-position-x: -10px;
+}
+.tzgg-1{
+	padding-left: 5px;
+	line-height: 28px;
+}
+.djsz{
+	background-image: url(..//images/党建思政.png);
+	background-position-x: 5px;
+	background-size: 567px 269px;
+	background-position-y: -100px;
+}
+.tzgg-1 >.a{
+	text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 23px;
+    font-family: 楷体;
+}
+.tzgg2{
+	margin-left: 150px;
+}
+.daohang2{
+	margin-left: 150px;
+}
+#imgs{
+	width: 100%;
+	height: 480px;
+	border-top: 1px solid #a6e4e3;
+	background-image: url(..//images/图文热点2.png);
+	background-repeat: no-repeat;
+	background-position-x: 89px;
+	background-position-y: 4px;
+	background-size: 1488px 43px;
+	margin-top: 317px;
+}
+.imgs-span{
+	position: absolute;
+	margin-left: 194px;
+	margin-top: 17px;
+	font-weight: bold;
+}
+#BG{
+	background-image: url(..//images/背景墙.png);
+	width: 1380px;
+	height: 370px;
+	margin: auto;
+	margin-top: 50px;
+	position: absolute;
+	margin-left: 150px;
+}
+#all-img{
+	width: 1418px;
+	height: 507px;
+	margin-top: 50px;
+	margin: auto;
+	padding-top: 19px;
+	margin-left: 12px
+}
+.daohang >ul{
+	padding-left: 40px;
+}
+.daohang >ul >li{
+	padding-top:24px;
+}
+.daohang >ul >li>a{
+	text-decoration: none;
+	color: black;
+}
+.daohang >ul >li>a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.data{
+	font-size: 15px;
+	color: #333;
+	float: right;
+	padding-right: 4px;
+	clear: right;
+}
+#foot
+{
+	width: 100%;
+	height: 150px;
+	/*background-color: #a5ded0;*/
+	padding-top: 15px;
+}
+#foot-center{
+	width:1280px;
+	height: 140px;
+	/*background-color: white;*/
+	margin-left:265px;
+}
+#foot-l{
+	width: 500px;
+	height: 140px;
+	/*background-color: pink;*/
+	float: left;
+}
+.span-1{
+	display: block;
+	margin: auto;
+	width: 194px;
+}
+.foot-img{
+	width: 200px;
+	height: 116px;
+	/*background-color: pink;*/
+	float: left;
+}
+.chat-img{
+	width: 93px;
+	height: 93px;
+	display: block;
+	padding-left: 20px;
+	float: left;
+}
+.chat-r{
+	padding-left: 35px;
+}
+#foot-r{
+	width: 1330px;
+	height: 140px;
+	/*background-color: red;*/
+	font-size: 13px;
+	line-height: 22px;
+}
+#foot-r>ul>li>span{
+	padding-left: 10px;
+}
+.more{
+	float: right;
+	padding-right: 36px;
+	padding-top: 3px;
+	color: white;
+	text-decoration: none;
+}
+.more:hover{
+	color: red;
+}
+.m{
+	float: right;
+	padding-top: 18px;
+	padding-right: 149px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+.m:hover{
+	color: red;
+}
+.span-1>a{
+	color: red;
+	font-size: 19px;
+	text-decoration: none;
+	margin-left: -44px;
+}
+.span-1>a:hover{
+	text-decoration: underline;
+}
+.foot-img>span{
+	color: red;
+}
+.change-a{
+	color: white;
+	text-decoration: none;
+}
